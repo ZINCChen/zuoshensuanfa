@@ -2,19 +2,78 @@
 //
 
 #include <iostream>
-
+#include "_00_BubbleSort.h"
+#include "_01_SelectionSort.h"
+#include "_02_InsertionSort.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+    int numSort;
+    cin >> numSort;
+    int testTime = 500;
+    int size = 10;
+    int value = 100;
+    bool succeed = true;
+    for (int i = 0; i < testTime; i++)
+    {
+        vector<int> arr1 = Sort::generateRandomArray(size, value);
+        vector<int> arr2 = Sort::copyArray(arr1);
+        vector<int> arr3 = Sort::copyArray(arr1);
+        switch (numSort)
+        {
+        case 0:
+            _00_0BubbleSort::bubbleSort(arr1);
+            break;
+        case 1:
+            _01_SelectionSort::selectionSort(arr1);
+            break;
+        case 2:
+            _02_InsertionSort::insertionSort(arr1);
+            break;
+        default:
+            cout << "You are wrong!" << endl;
+            cout << "重新输入numSort：";
+            cin >> numSort;
+            break;
+        }
+        
+        Sort::rightMathod(arr2);
+        if (!Sort::isEqual(arr1, arr2))
+        {
+            succeed = false;
+            Sort::printArray(arr3);
+            break;
+        }
+    }
+    cout << (succeed?"Nice!":"Fucking fucked!");
+    vector<int> arr = Sort::generateRandomArray(size, value);
+    switch (numSort)
+    {
+    case 0:
+        _00_0BubbleSort::bubbleSort(arr);
+        cout << "原始数据：" << endl;
+        Sort::printArray(arr);
+        cout << "bubbleSort" << endl;
+        cout << "**********************************" << endl;
+        Sort::printArray(arr);
+        break;
+    case 1:
+        _01_SelectionSort::selectionSort(arr);
+        cout << "原始数据：" << endl;
+        Sort::printArray(arr);
+        cout << "selectionSort" << endl;
+        cout << "**********************************" << endl;
+        Sort::printArray(arr);
+        break;
+    case 2:
+        _02_InsertionSort::insertionSort(arr);
+        cout << "原始数据：" << endl;
+        Sort::printArray(arr);
+        cout << "insertionSort" << endl;
+        cout << "**********************************" << endl;
+        Sort::printArray(arr);
+        break;
+    default:
+        cout << "You are wrong!" << endl;
+        break;
+    }
 }
-
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
-
-// 入门使用技巧: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件

@@ -139,7 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Sort.cpp" />
     <ClCompile Include="zuoshensuanfa.cpp" />
+    <ClCompile Include="_00_BubbleSort.cpp" />
+    <ClCompile Include="_01_SelectionSort.cpp" />
+    <ClCompile Include="_02_InsertionSort.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base.h" />
+    <ClInclude Include="Sort.h" />
+    <ClInclude Include="_00_BubbleSort.h" />
+    <ClInclude Include="_01_SelectionSort.h" />
+    <ClInclude Include="_02_InsertionSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

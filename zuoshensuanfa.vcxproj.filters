@@ -18,5 +18,34 @@
     <ClCompile Include="zuoshensuanfa.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="_00_BubbleSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="_01_SelectionSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Sort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="_02_InsertionSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_00_BubbleSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="_01_SelectionSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="_02_InsertionSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
