@@ -144,6 +144,9 @@
     <ClCompile Include="_00_BubbleSort.cpp" />
     <ClCompile Include="_01_SelectionSort.cpp" />
     <ClCompile Include="_02_InsertionSort.cpp" />
+    <ClCompile Include="_03_MergeSort.cpp" />
+    <ClCompile Include="_04_SmallSum.cpp" />
+    <ClCompile Include="_05_InversionPair.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Base.h" />
@@ -151,6 +154,9 @@
     <ClInclude Include="_00_BubbleSort.h" />
     <ClInclude Include="_01_SelectionSort.h" />
     <ClInclude Include="_02_InsertionSort.h" />
+    <ClInclude Include="_03_MergeSort.h" />
+    <ClInclude Include="_04_SmallSum.h" />
+    <ClInclude Include="_05_InversionPair.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -30,6 +30,15 @@
     <ClCompile Include="_02_InsertionSort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="_03_MergeSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="_04_SmallSum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="_05_InversionPair.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_00_BubbleSort.h">
@@ -45,6 +54,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="_02_InsertionSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="_03_MergeSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="_04_SmallSum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="_05_InversionPair.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
